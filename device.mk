@@ -189,6 +189,9 @@ PRODUCT_PACKAGES += \
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/rootdir/etc/init.qti.qseecomd.sh:$(TARGET_COPY_OUT_VENDOR)/bin/init.qti.qseecomd.sh
 
+# Face unlock
+TARGET_FACE_UNLOCK_SUPPORTED := true
+
 # Health
 PRODUCT_PACKAGES += \
     android.hardware.health@2.0-impl \

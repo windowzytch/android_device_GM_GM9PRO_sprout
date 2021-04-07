@@ -14,4 +14,4 @@
 # limitations under the License.
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/revengeos_GM9PRO_sprout.mk
+    $(LOCAL_DIR)/arrow_GM9PRO_sprout.mk

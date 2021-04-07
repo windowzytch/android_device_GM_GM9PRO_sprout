@@ -1,6 +1,6 @@
 # Inherit some common RevengeOS stuff.
 $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
-$(call inherit-product, vendor/revengeos/config/common.mk)
+$(call inherit-product, vendor/arrow/config/common.mk)
 
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/languages_full.mk)
@@ -16,7 +16,7 @@ TARGET_BOOT_ANIMATION_RES := 1080
 
 # Device identifiers
 PRODUCT_DEVICE := GM9PRO_sprout
-PRODUCT_NAME := revengeos_GM9PRO_sprout
+PRODUCT_NAME := arrow_GM9PRO_sprout
 PRODUCT_BRAND := GM
 PRODUCT_MODEL := GM 9 Pro
 PRODUCT_MANUFACTURER := GM
