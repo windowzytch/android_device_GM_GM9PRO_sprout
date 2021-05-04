@@ -179,6 +179,9 @@ PRODUCT_PACKAGES += \
     libvulkan \
     memtrack.sdm660
 
+# Face unlock
+TARGET_FACE_UNLOCK_SUPPORTED := true
+
 # FBE support
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/rootdir/etc/init.qti.qseecomd.sh:$(TARGET_COPY_OUT_VENDOR)/bin/init.qti.qseecomd.sh

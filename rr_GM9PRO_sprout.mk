@@ -1,6 +1,6 @@
-# Inherit some common Lineage stuff.
+# Inherit some common Resurrection Remix stuff.
 $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
-$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+$(call inherit-product, vendor/rr/config/common_full_phone.mk)
 
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/languages_full.mk)
@@ -13,7 +13,7 @@ $(call inherit-product, device/GM/GM9PRO_sprout/device.mk)
 
 # Device identifiers
 PRODUCT_DEVICE := GM9PRO_sprout
-PRODUCT_NAME := lineage_GM9PRO_sprout
+PRODUCT_NAME := rr_GM9PRO_sprout
 PRODUCT_BRAND := GM
 PRODUCT_MODEL := GM 9 Pro
 PRODUCT_MANUFACTURER := GM
@@ -27,7 +27,3 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
 BUILD_FINGERPRINT := essential/mata/mata:8.1.0/OPM1.180104.092/224:user/release-keys
 
 PRODUCT_GMS_CLIENTID_BASE := android-GM
-
-# Adds face unlock if package is available on ROM source
-# Thanks to @Tenshi2112 for telling me about it
-TARGET_SUPPORT_FACE_UNLOCK := true
